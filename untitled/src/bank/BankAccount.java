@@ -21,6 +21,14 @@ public abstract class BankAccount {
         this.balance = balance;
     }
 
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "accountId='" + accountId + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
+
     //pour consulter la solde
     public Double consultBalance(){
         return getBalance();
